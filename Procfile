@@ -1,1 +1,1 @@
-worker : npm i ffmepg && npm start
+worker : npm install && node .
