@@ -127,10 +127,10 @@ BELUM MELEBIHI BATAS WAKTU!!.*
 `
 }
 exports.listMenu = (time, salam, pushname, prefix) => {
-    return `*Selamat ${salam} Beban ${pushname} 😷*
+    return `*Selamat ${salam} Beban ${pushname} 😷 Dan Semoga Harimau Badak Sapi Ahihi 😎🤙*
 *⌚Time Server : ${time}*
 *📚 Cara terbaik untuk memulai adalah dengan berhenti berbicara dan mulai melakukan.*
-
+*📍Jangan Lupa Untuk Donasi Karna Donasi Kalian Adalah Semangat Owner Untuk Tetap On Bot Walaupun Sedang Sibuk!*
 ╭──❒  [ Owner 」 💉
 ├ Gue ga pernah nyesel kenal sama lu, karna lu adalah tokoh favorit yang pernah gw temui 
 ├ < evaluate
@@ -691,7 +691,7 @@ Goodbye Beban🔥`
 }
 exports.source = () =>{
 return`*── 「 SOURCE 」 ──*
-Script : ZeeoneOfc
+Script : Yt ZeeoneOfc
 Recode : Kaga Dulu Deh Bro Gw Juga Susah Payah Aowkwowkw
 Note : *MAKA NYA GANTENG KONTOL!:V*
 `
@@ -713,7 +713,7 @@ Berapapun donasi kalian akan sangat berarti bagi bot/owner 👍
 Thanks!
 
 Contact person Owner:
-wa.me/${ownernomer} ${ownername} (Owner)
+wa.me/${ownernomer} (Owner)
 
     `
 }
