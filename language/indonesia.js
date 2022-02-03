@@ -2,7 +2,7 @@ exports.private = () =>{
 	return`Fitur hanya bisa di gunakan di private chat`
 	}
 exports.wait = () => {
-    return `⏳ Mohon tunggu sebentar~`
+    return `⏳ Mohon tunggu sebentar sayang~`
 }
 
 exports.ok = () => {
@@ -86,33 +86,44 @@ exports.notNum = (q) => {
     return `"${q}", bukan angka!`
 }
 exports.menunya = (salam, pushname) =>{
-	return`Hai Beban ${pushname} 🗿 selamat ${salam}  , 
-╭─────[ *PERATURAN* ]─────✧
-┴
-│BOT Aktif Jika Owner Aktif!
-*│¹ Dilarang Hina Bot / Ownerku*
-*│² Dilarang Spam Commands*
-*│³ Dilarang Kirim Virtex / Virkon*
-*│⁴ Dilarang Spam Menu Gak Jelas*
-*│⁵ Dilarang Telpon / Vc bot*
-*│⁶ Dilarang Culik Bot / Trial 2 Day*
-*│⁷ Dilarang Promosi*
-*│⁸ Dilarang Meniru pesan Bot*
-*│⁹ Bot Tidak Menerima Save Kontak 🗿*
-*│¹⁰ Dilarang Chat Owner Ga Jelas*
-*│¹¹ No plagiat*
-┬
-╰──────────···
+	return`Hai Orang Yang Paling Beban ${pushname} 🗿 Saya Ucapkan Selamat ${salam} Dan Semoga Bahagia Dengan Pasangannya 🥰 , 
 
-╭─────[ *HUKUMAN* ]─────✧
-┴
-│ 1 & 11 = Block + banned permanent 🗿
-│ 2,4,6 & 8 = Banned sementara ✌
-│ 3 = War 👻
-│ 5 = Block sementara ✨
-│ 9 & 10 = Block permanent 🗿
-┬
-╰──────────···      
+「 O p e n  S e w a  B o t  ! 」
+╭─❒ 「 Sewa Bot Untuk Kebutuhan 」🤖
+├ LIST HARGA IN HERE! 👇
+├ 
+├ 1 BULAN : 25K
+├ 2 MINGGU : 15K
+├
+├ *NOTE : INI BELUM TERMASUK MENJADI MEMBER PREMIUM!*
+╰❒ 「 📍 BANG KENAPA KOK MAHAL? YA KARNA KALO BOT ITU GAMPANG KE BANNED OLEH WHATSAPP! 📍 」
+
+「  O p e n  R u n  B o t  !  」
+╭─❒ 「 Run Bot Untuk Nyantai 」🚬
+├ LIST HARGA IN HERE! 👇
+├
+├ 1 MINGGU : 10K
+├ 1 BULAN : 20K
+├ PERMANENT : BISA DI BICARAKAN DENGAN OWNER!
+├
+├ *NOTE : UNTUK SCRIPT BISA DARI ELU ATAU PAKE SC GW ATAU BEBAS!*
+╰❒ 「 📌JIKA DELAY ATAUPUN TIDAK MERESPON MUNGKIN KENDALA JARINGAN!📌 」
+
+「 O p e n  P e m b u a t a n  L o g o ! 」
+╭─❒ 「 Logo 」🎨
+├ LOGO UNTUK TEAM ESPORT
+├ LOGO UNTUK PRIBADI
+├ LOGO UNTUK YOUTUBE
+├ LOGO UNTUK FB
+├ LOGO UNTUK JB
+├ LOGO UNTUK WA
+├ LOGO UNTUK IG
+├ LOGO UNTUK SERTIFIKAT GAME
+├ LOGO UNTUK WM EDIT
+├
+├ *NOTE : UNTUK HARGA TERGANTUNG LOGO. UNTUK WAKTU PEMBUATAN NYA 10-30 MENIT TERGANTUNG LOGO. DAN MOHON UNTUK TIDAK MENGSPAM KETIKA PEMBUATAN
+BELUM MELEBIHI BATAS WAKTU!!.*
+╰❒ 「 💠JIKA DI ATAS TIDAK ADA YANG KALIAN CARI SILAHKAN HUBUNGI OWNER UNTUK MENANYAKAN! DAN MOHON UNTUK TIDAK SPAM OWNER KARNA AKAN BERAKIBAT KALIAN TERBLOK PERMANENT💠 」      
 `
 }
 exports.listMenu = (time, salam, pushname, prefix) => {
@@ -170,6 +181,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}tourl [image/video]
 ├ ${prefix}togif [sticker]
 ├ ${prefix}tomp4 [sticker]
+├ ${prefix}emojimix [emot]
 ╰❒ ${prefix}toimg [reply sticker]
 
 
@@ -572,7 +584,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 exports.rules = (prefix) => {
     return `
 ╭─────[ *PERATURAN* ]─────✧
-┴
+┴「 ANDA SOPAN KAMI PUN SEGAN! 」
 │¹ Dilarang Hina Bot / Owner
 │² Dilarang Spam Commands
 │³ Dilarang Kirim Virtex / Virkon
@@ -587,8 +599,42 @@ exports.rules = (prefix) => {
 ┬
 ╰──────────···
 
+「 O p e n  S e w a  B o t  ! 」
+╭─❒ 「 Sewa Bot Untuk Kebutuhan 」🤖
+├ LIST HARGA IN HERE! 👇
+├ 
+├ 1 BULAN : 25K
+├ 2 MINGGU : 15K
+├
+├ *NOTE : INI BELUM TERMASUK MENJADI MEMBER PREMIUM!*
+╰❒ 「 📍 BANG KENAPA KOK MAHAL? YA KARNA KALO BOT ITU GAMPANG KE BANNED OLEH WHATSAPP! 📍 」
+
+「  O p e n  R u n  B o t  !  」
+╭─❒ 「 Run Bot Untuk Nyantai 」📌
+├ LIST HARGA IN HERE! 👇
+├
+├ 1 MINGGU : 10K
+├ 1 BULAN : 20K
+├ PERMANENT : 20K / BULAN
+├
+├ *NOTE : UNTUK SCRIPT BISA DARI ELU ATAU PAKE SC GW ATAU BEBAS!*
+╰❒ 「 JIKA DELAY ATAUPUN TIDAK MERESPON MUNGKIN KENDALA JARINGAN! 」
+
+「 O p e n  P e m b u a t a n  L o g o ! 」
+╭─❒ 「 Logo 」🎨
+├ LOGO UNTUK TEAM ESPORT
+├ LOGO UNTUK PRIBADI
+├ LOGO UNTUK YOUTUBE
+├ LOGO UNTUK FB
+├ LOGO UNTUK JB
+├ LOGO UNTUK WA
+├ LOGO UNTUK IG
+├ LOGO UNTUK SERTIFIKAT GAME
+├ LOGO UNTUK WM EDIT
+╰❒ 「 JIKA DI ATAS TIDAK ADA YANG KALIAN CARI SILAHKAN HUBUNGI OWNER UNTUK MENANYAKAN! DAN MOHON UNTUK TIDAK SPAM OWNER KARNA AKAN BERAKIBAT KALIAN TERBLOK PERMANENT 」
+
 ╭─────[ *HUKUMAN* ]─────✧
-┴
+┴ 「 HUKUMAN BILA MELANGGAR ATURAN/RULES BOT! 」
 │ 1 & 11 = Block + banned permanent 🗿
 │ 2,4,6 & 8 = Banned sementara ✌
 │ 3 = War 👻
@@ -599,7 +645,7 @@ exports.rules = (prefix) => {
 1. Jangan spam bot. 🙅
 Sanksi: *❎ WARN/SOFT BLOCK*
 
-2. Jangan telepon bot. ☎️
+2. Jangan telepon/vc bot. ☎️
 Sanksi: *❎ SOFT BLOCK*
 
 3. Jangan mengeksploitasi bot.
@@ -627,40 +673,47 @@ Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
 
 ⚠️ Segala kebijakan dan ketentuan di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
 
-Arigatou Gozaimasu! Untuk kalian user ramah
+「 📍TERIMAKASIH UNTUK KALIAN USER RAMAH!📍 」
 `
 }
 exports.welcome = () =>{
-	return`Selamat Datang Di Grup
-	
+	return`Hallo Beban Baru 🥰 Selamat Datang Di Grup
+
+*INTRO DULU YA SAYANG*
 📛 𝖭𝖺𝗆𝖺 :
 🔞 𝖴𝗆𝗎𝗋 :
 📌 Status :
-╰ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 𝗄𝖺k ~`
+╰ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 kak ~`
 }
 exports.leave = () =>{
-	return`Yah beban out 😣 Mental aman kan sayang >.<
-Goodbye`
+	return`Yah beban out 😣 Lain kali kalo baperan ga usah masuk nanti malah jadi sider >.<
+Goodbye Beban🔥`
 }
 exports.source = () =>{
 return`*── 「 SOURCE 」 ──*
-
-Base : Kaga Dulu Deh Bro Gw Juga Susah Payah Aowkwowkw
+Script : ZeeoneOfc
+Recode : Kaga Dulu Deh Bro Gw Juga Susah Payah Aowkwowkw
+Note : *MAKA NYA GANTENG KONTOL!:V*
 `
 }
 exports.tos = (ownernomer) => {
     return `
 *── 「 DONATE 」 ──*
 
-Hai kak ☺️ 
-Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
+Hai idoll😎
+Jangan Cuma Make Nya Doang Tapi Harus Donasi
+Juga Biar Bot On Always Time!
+Kalian bisa donasi ke nomer di bawah!
+Pulsa : 081224413305
+Dana : 089695073357
+Bank Cimb Niaga : Chat Owner!
+Gopay,Dana,Ovo,And All Payment : Scan Qr!
 
-Berapapun donasi kalian akan sangat berarti 👍
-
+Berapapun donasi kalian akan sangat berarti bagi bot/owner 👍
 Thanks!
 
 Contact person Owner:
-wa.me/${ownernomer} (Owner)
+wa.me/${ownernomer} ${ownername} (Owner)
 
     `
 }
@@ -720,6 +773,7 @@ exports.converter = (prefix) =>{
 • ${prefix}togif [sticker]
 • ${prefix}tomp4 [sticker]
 • ${prefix}toimg [reply sticker]
+• ${prefix}emojimix [emot+emot]
 `}
 
 exports.effect = (prefix) =>{
