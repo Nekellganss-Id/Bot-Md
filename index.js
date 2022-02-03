@@ -69,7 +69,7 @@ typemenu = 'templateLocation'
 moment.tz.setDefault("Asia/Jakarta").locale("id"); 
 module.exports = alpha = async (alpha, m, chatUpdate) => {
     try {
-        var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype === 'messageContextInfo') ? m.message.buttonsResponseMessage.selectedButtonId : ''
+        var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype == 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ""
 
  		var budy = (typeof m.text == 'string' ? m.text : ' ')
         var prefix = prefa ? /^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi.test(body) ? body.match(/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi)[0] : "" : prefa ?? global.prefix
@@ -144,7 +144,7 @@ module.exports = alpha = async (alpha, m, chatUpdate) => {
         
         
         if (m.isGroup && !m.key.fromMe && database.allow.antilink && !isCreator && !isGroupAdmins){
-        	if (budy.match(`https://chat.whatsapp.com`)) {
+        	if (budy.match(`https://`,`http://`,`chat.whatsapp.com`)) {
         	alpha.sendMessage(m.chat, {text: `*Antilink Group Terdeteksi*\n\nKamu akan dikeluarkan dari group ${groupMetadata.subject}`}, {quoted:m})
 			alpha.groupParticipantsUpdate(m.chat, [sender], 'remove')
 		}
@@ -443,7 +443,7 @@ reply(`Kirim/Reply Gambar/Video Dengan Caption ${prefix + command}\n\nDurasi Sti
 }
 }
 break
-case 'emojimix': case 'ex': {
+case 'emojimix': case 'emoj': {
 	        if (!text) throw `Example : ${prefix + command} 😅+🤔`
 		let [emoji1, emoji2] = text.split`+`
 		let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
@@ -641,7 +641,7 @@ break
                 if (!m.isGroup) return reply(lang.groupOnly())
                 if (!isGroupAdmins) return reply(lang.adminOnly())
                 if (!isBotAdmins) return reply(lang.botNotAdmin())
-                let tekss = `══✪〘 *Gabut Tagall* 〙✪══\n\n➲ *Message : ${q ? q : 'Nothing'}*\n\n`
+                let tekss = `══✪〘 *Para Beban* 〙✪══\n\n➲ *Message : ${q ? q : 'Nothing'}*\n\n`
 		      	for (let mem of participants) {
 		            tekss += `࿃➡️ @${mem.id.split('@')[0]}\n`
 				}
