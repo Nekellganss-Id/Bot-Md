@@ -141,11 +141,21 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}setmenu templateLocation
 ├ ${prefix}setmenu templateTenor
 ├ ${prefix}sendsesi
+├ ${prefix}setcmd
+├ ${prefix}delcmd
+├ ${prefix}listcmd
+├ ${prefix}lockcmd
 ├ ${prefix}join [link]
 ├ ${prefix}self
 ├ ${prefix}public [only bot]
 ├ ${prefix}del [pesan bot]
 ╰❒ ${prefix}setppbot [reply image]
+
+╭─❒ 「 Bot Info 」💉
+├ ${prefix}sewa
+├ ${prefix}premium
+├ ${prefix}donasi
+╰❒
 
 ╭─❒ 「 Group 」 💉
 ├ Dinding terbesar yang harus kamu panjat adalah yang kamu bangun di benakmu
@@ -153,6 +163,8 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}linkgc
 ├ ${prefix}group [open/close]
 ├ ${prefix}tagall [text]
+├ ${prefix}jodohku [text]
+├ ${prefix}jadian [text]
 ╰❒ ${prefix}hidetag [text]
 
 ╭─❒ 「 Anime 」 💉
@@ -182,6 +194,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}togif [sticker]
 ├ ${prefix}tomp4 [sticker]
 ├ ${prefix}emojimix [emot]
+├ ${prefix}removebg [image]
 ╰❒ ${prefix}toimg [reply sticker]
 
 
@@ -728,11 +741,18 @@ return`*Owner*
 • ${prefix}setmenu templateLocation
 • ${prefix}setmenu templateTenor
 • ${prefix}sendsesi
+• ${prefix}setcmd
+• ${prefix}delcmd
+• ${prefix}listcmd
+• ${prefix}lockcmd
 • ${prefix}join [link]
 • ${prefix}self
 • ${prefix}public [only bot]
 • ${prefix}del [pesan bot]
 • ${prefix}setppbot [reply image]
+• ${prefix}sewa
+• ${prefix}premium
+• ${prefix}donasi
 `}
 
 exports.group = (prefix) =>{
@@ -743,6 +763,8 @@ exports.group = (prefix) =>{
 • ${prefix}group [open/close]
 • ${prefix}tagall [text]
 • ${prefix}hidetag [text]
+• ${prefix}jadian [text]
+• ${prefix}jodohku [text]
 `}
 
 exports.anime = (prefix) =>{
@@ -774,6 +796,7 @@ exports.converter = (prefix) =>{
 • ${prefix}tomp4 [sticker]
 • ${prefix}toimg [reply sticker]
 • ${prefix}emojimix [emot+emot]
+• ${prefix}removebg [image]
 `}
 
 exports.effect = (prefix) =>{
